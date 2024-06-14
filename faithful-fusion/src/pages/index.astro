@@ -6,18 +6,26 @@ import Linkedin from '../components/icons/LinkedIn.astro';
 import Socialpill from '../components/SocialPill.astro';
 import GitHub from '../components/icons/GitHub.astro';
 import Mail from '../components/icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import SectionComponenets from '../components/SectionComponenets.astro';
+import ExperienceLogo from '../components/icons/ExperienceLogo.astro';
+import ExperienceItems from '../components/ExperienceItems.astro';
+import Code from '../components/icons/Code.astro';
 ---
 
 <Layout title="portafolio de David - Desarrollador y Programador web" >
-	<main>
-		<section class="w-[720px] mx-auto lg:w[740px] py-44">
+	<main class=" px-4 ">
+
+		<SectionComponenets>
+				
+				
 			<img class="rounded-full w-12 h-12" src="https://avatars.githubusercontent.com/u/98566653?v=4" alt="David R photo"/>
 			<h1 class="text-white text-5xl font-bold flex flex-row justify-center gap-x-4 pb-4">Hola, Soy David Ramirez <a href="https://www.linkedin.com/in/david-ram%C3%ADrez-su%C3%A1rez-8925b9149/" target="_blank" class="flex justify-center items-center" ><Badge>disponible para trabajar</Badge></a> </h1>
 			<h2 class=" text-xl opacity-80"> <spam>Ingeniero Administrador, fullstack developer,</spam>con una pasión por la tecnología y la programación. Me encanta crear soluciones innovadoras para personas y empresas, y estoy constantemente buscando maneras de mejorar y aprender más en este campo.
 
 			royectos para empresas</h2>
 			
-			<nav class="flex gap-x-2">
+			<nav class="flex gap-x-2 mb-8 mt-4">
 				<Socialpill href="https://www.linkedin.com/in/david-ramírez-suárez-8925b9149">
 					<Linkedin class="w-6 h-6" />
 					LinkedIn
@@ -26,13 +34,25 @@ import Mail from '../components/icons/Mail.astro';
 					<GitHub class="w-6 h-6" />
 					GitHub
 				</Socialpill>
-				<Socialpill href="https://github.com/daramirezsu06">
+				<Socialpill href="mailto:daramirezsu@gmail">
 					<Mail class="w-6 h-6" />
 					daramirezsu@gmail.com
 				</Socialpill>
 			</nav>
+			</SectionComponenets>	
 
-		</section>
+			<SectionComponenets>
+				<h1 class="flex gap-2 pb-4"><ExperienceLogo class="size-6" /> Experiencia Laboral</h1>
+				<Experience />
+			</SectionComponenets>
+			<SectionComponenets>
+				<h1 class="flex gap-2 pb-4"><Code class="size-6" /> Proyectos</h1>
+				<Experience />
+			</SectionComponenets>
+
+			
+
+		
 		
 	</main>
 </Layout>
