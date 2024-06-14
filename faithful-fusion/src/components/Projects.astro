@@ -1,0 +1,29 @@
+---
+const PROJECTS = [
+    {
+        title: "Papodev",
+        description: "Desarrollo de una landing page de papodev. Creado con Astro.",
+        link: "https://papodev.vercel.app/",
+        github: "https://github.com/JPRuedaZ/papodev",
+        image: "/assets/papodev.png",
+        tags: ["Astro", "Tailwind", "Figma"]
+    }
+]
+---
+
+{
+    PROJECTS.map(({title, description, link, github, image, tags}) => (
+        <article>
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <ul>
+                {
+                    tags.map((tag) => (
+                        <li>{tag}</li>
+                    ))
+                }
+            </ul>
+            <img src={image} alt={`Captura de pantalla del proyecto ${image}`} />
+        </article>
+))
+}
