@@ -1,0 +1,202 @@
+---
+import Cloudinary from "./icons/Cloudinary.astro"
+import Css from "./icons/Css.astro"
+import Docker from "./icons/Docker.astro"
+import ExpressJs from "./icons/ExpressJs.astro"
+import Html from "./icons/Html.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import Jwt from "./icons/Jwt.astro"
+import MongoDB from "./icons/MongoDB.astro"
+import NestJs from "./icons/NestJs.astro"
+import NextJs from "./icons/NextJs.astro"
+import NodeJs from "./icons/NodeJs.astro"
+import PostgreSQL from "./icons/PostgreSQL.astro"
+import ReactJs from "./icons/ReactJs.astro"
+import Redux from "./icons/Redux.astro"
+import Swagger from "./icons/Swagger.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import TypeOrm from "./icons/TypeOrm.astro"
+import TypeScript from "./icons/TypeScript.astro"
+import Vercel from "./icons/Vercel.astro"
+
+const TAGS = {
+    NEST: {
+        name: "NestJS",
+        class: "bg-[#0c131c] text-white",
+        icon: NestJs,
+    },
+    NEXT: {
+        name: "NextJS",
+        class: "bg-[#fffefe] text-black",
+        icon: NextJs,
+    },
+    REACT: {
+        name: "ReactJS",
+        class: "bg-blue-500",
+        icon: ReactJs,
+    },
+    REDUX: {
+        name: "Redux",
+        class: "bg-[#fffefe] text-black",
+        icon: Redux,
+    },
+    JAVASCRIPT: {
+        name: "JavaScript",
+        class: "bg-yellow-500",
+        icon: JavaScript,
+    },
+    TYPESCRIPT: {
+        name: "TypeScript",
+        class: "bg-blue-500",
+        icon: TypeScript,
+        
+    },
+    TAILWIND: {
+    name: 'Tailwind CSS',
+    class: 'bg-[#003159] text-white',
+    icon: Tailwind,
+  },
+    EXPRESSJS: {
+        name: "ExpressJS",
+        class: "bg-[#fffefe] text-black",
+        icon: ExpressJs,
+    },
+    HTML: {
+        name: "HTML",
+        class: "bg-red-500",
+        icon: Html,
+    },
+
+    CSS: {
+        name: "CSS",
+        class: "bg-blue-500",
+        icon: Css,
+    },
+    POSTGRESQL: {
+        name: "PostgreSQL",
+        class: "bg-[#12223d] text-white",
+        icon: PostgreSQL,   
+    },
+    MONGODB: {
+        name: "MongoDB",
+        class: "bg-green-500",
+        icon: MongoDB,
+    },
+    NODEJS: {
+        name: "NodeJS",
+        class: "bg-[#0c131c] text-white",
+        icon: NodeJs,
+    },
+    SWAGGER: {
+        name: "Swagger",
+        class: "bg-gray-500",
+        icon: Swagger,
+    },
+    JWT : {
+        name: "JWT",
+        class: "bg-gray-500",
+        icon: Jwt,
+    },
+    DOCKER: {
+        name: "Docker",
+        class: "bg-[#fffefe] text-black",
+        icon: Docker,
+    },
+    CLOUDINARY: {
+        name: "Cloudinary",
+        class: "bg-[#fffefe] text-black",
+        icon: Cloudinary,
+    },
+    TYPEORM : {
+        name: "TypeORM",
+        class: "bg-[#fffefe] text-black",
+        icon: TypeOrm,
+    },
+    VERCEL : {
+        name: "Vercel",
+        class: "bg-gray-500",
+        icon: Vercel,
+    }
+}
+const PROJECTS = [
+{
+        title: "Delicias Gales SAS",
+        description: "Desarrollo de una aplicacion para una distribuidora de diferente tipos de productos con el fin de mejorar la eficiencia del proceso de venta y optimizar el tiempo de entrega.",
+        link: "https://secureingresshome.vercel.app/",
+        github: "https://github.com/jourdanmauricio/delicias-gales-back",
+        image: "projects/enconstruccion.png",
+        tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.POSTGRESQL,TAGS.TYPEORM,TAGS.JWT,TAGS.CLOUDINARY,TAGS.SWAGGER
+        ],
+    },
+    {
+        title: "SIH - Secure Ingress Home",
+        description: "Desarrollo de una aplicación web para los conjuntos residenciales, con el fin de fortalecer la seguridad en las viviendas y mejorar la experiencia de los propietarios junto con los visitantes que accedan al predio.",
+        link: "https://secureingresshome.vercel.app/",
+        github: "https://github.com/JPRuedaZ/SIH-BackEnd-API-Rest",
+        image: "projects/sih2.png",
+        tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.POSTGRESQL,TAGS.TYPEORM,TAGS.JWT,TAGS.CLOUDINARY,TAGS.SWAGGER,TAGS.DOCKER,TAGS.VERCEL,
+        ],
+    },
+    {
+        title: "Ramiro Tech",
+        description: "Este trabajo fue algo muy interesante por que en el ultimo modulo academico , nos dividimos con mi compa David , el para especializacion del front y yo al back. Luego cada quien termino su especializacion en Abril y terminando Henry decidimos en Junio empalmar los trabajos, su front con mi back entonces nos tomo unos dias organizar todo para que todo cuadrara y quedara una buena pagina del ecommerce que decidimos llamarlo Ramiro Tech.",
+        link: "https://papodev.vercel.app/",
+        github: "https://github.com/JPRuedaZ/Backend-Ecommerce",
+        image: "projects/ramirotech2.png",
+        tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.POSTGRESQL,TAGS.TYPEORM,TAGS.CLOUDINARY,TAGS.JWT,TAGS.SWAGGER,TAGS.DOCKER,TAGS.VERCEL],
+    },
+    {
+        title: "Medical Services ",
+        description: "Este es una prueba beta que esta en desarrollo, se trata de un gestor de turnos para solicitar alguna cita de un servicio y que el usuario pueda tener la informacion de su cita agendada y si se le presenta alguna situacion pueda cancelarlo.",
+        link: "https://gestor-de-turnos.vercel.app/",
+        github: "https://github.com/JPRuedaZ/gestor-de-turnos",
+        image: "projects/medicalservices2.png",
+        tags: [TAGS.CSS,TAGS.JAVASCRIPT,TAGS.TYPESCRIPT,TAGS.REACT,TAGS.REDUX,TAGS.NODEJS, TAGS.EXPRESSJS, TAGS.POSTGRESQL, TAGS.TYPEORM, TAGS.VERCEL],
+    },
+    {
+        title: "PapoMovie",
+        description: "Este fue mi primer proyecto fullstack con Js en el entorno NodeJs, se trata de una pagina de peliculas que empezo haciendo el llamado a una API de peliculas y luego ya esas peliculas se almacenaron en una base de datos entonces ya se conecto un backend con el llamado del front para la creacion de peliculas por medio de un formulario y tiene un filtro combinado en una de las pages.",
+        link: "https://papomovie-pagina.vercel.app/index.html",
+        github: "https://github.com/JPRuedaZ/papomovie-pagina",
+        image: "projects/papomovie2.png",
+        tags: [TAGS.HTML,TAGS.CSS,TAGS.JAVASCRIPT,TAGS.NODEJS,TAGS.EXPRESSJS,TAGS.MONGODB, TAGS.VERCEL],
+    },
+]
+---
+<section class="grid grid-cols-auto-fill-300 gap-20 px-5">
+{
+    PROJECTS.map(({title, description, link, github, image, tags}) => (
+    <article class="max-w-1/2 flex flex-col">
+        <a href={github} target="_blank" rel="noopener noreferrer" class="no-underline"><h3 class="text-xl font-semibold text-yellow-200 mb-4">{title}</h3></a>
+
+        <a
+          class="relative group rounded flex justify-center w-full overflow-hidden"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="w-full h-auto rounded shadow-2xl shadow-white/10 group-hover:scale-110 transition duration-500 object-cover"
+            src={image}
+            alt={`Captura de pantalla del proyecto ${image}`}
+          />
+          <div class="absolute bg-black w-full h-full opacity-0 transition-opacity duration-500 group-hover:opacity-10" />
+        </a>
+        <ul class="flex flex-wrap gap-2 flex-row my-4">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex items-center gap-x-2 rounded-full text-xs ${tag.class} py-0 px-2`}
+              >
+                <tag.icon class="size-5" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+        <p class="text-base mb-4 text-pretty flex-grow">{description}</p>
+      </article>
+    ))
+}
+</section>

@@ -5,7 +5,18 @@ import TypeScript from "./icons/TypeScript.astro"
 import MongoDB from "./icons/MongoDB.astro"
 import PostgreSQL from "./icons/PostgreSQL.astro"
 import TailwindCSS from "./icons/TailwindCSS.astro"
-import Nodejs from "./icons/Nodejs.astro"
+import Cloudinary from "./icons/Cloudinary.astro"
+import Css from "./icons/Css.astro"
+import Docker from "./icons/Docker.astro"
+import ExpressJs from "./icons/ExpressJs.astro"
+import Html from "./icons/Html.astro"
+import JavaScript from "./icons/JavaScript.astro"
+import Jwt from "./icons/Jwt.astro"
+import NextJs from "./icons/NextJs.astro"
+import Redux from "./icons/Redux.astro"
+import Swagger from "./icons/Swagger.astro"
+import TypeOrm from "./icons/TypeOrm.astro"
+import Vercel from "./icons/Vercel.astro"
 
 
 
@@ -43,22 +54,97 @@ const TAGS = {
         class: "bg-purple-500",
         icon: TypeScript,
     },
-    NODE: {
-        name: "NodeJS",
-        class: "bg-green-500",
-        icon: Nodejs,
+    JWT: {
+        name: "JWT",
+        class: "bg-red-500",
+        icon: Jwt,
     },
+    CLOUDINARY: {
+        name: "Cloudinary",
+        class: "bg-blue-500",
+        icon: Cloudinary,
+    },
+    CSS: {
+        name: "CSS",
+        class: "bg-blue-500",
+        icon: Css,
+    },
+    DOCKER: {
+        name: "Docker",
+        class: "bg-green-500",
+        icon: Docker,
+    },
+    EXPRESS: {
+        name: "ExpressJS",
+        class: "bg-[#fffefe] text-black",
+        icon: ExpressJs,
+    },
+    HTML: {
+        name: "HTML",
+        class: "bg-red-500",
+        icon: Html,
+    },
+    NEXT: {
+        name: "NextJS",
+        class: "bg-[#fffefe] text-black",
+        icon: NextJs,
+    },
+    REDUX: {
+        name: "Redux",
+        class: "bg-[#fffefe] text-black",
+        icon: Redux,
+    },
+    SWAGGER: {
+        name: "Swagger",
+        class: "bg-[#fffefe] text-black",
+        icon: Swagger,
+    },
+    VERCEL: {
+        name: "Vercel",
+        class: "bg-[#fffefe] text-black",
+        icon: Vercel,
+    },
+    TYPEORM: {
+        name: "TypeORM",
+        class: "bg-yellow-500",
+        icon: TypeOrm,
+    },
+    JavaScript: {
+        name: "JavaScript",
+        class: "bg-yellow-500",
+        icon: JavaScript,
+    },
+   
 
 }
 const PROJECTS = [
     {
-        title: "Papodev",
-        description: "Desarrollo de una landing page de papodev. Creado con Astro.",
+        title: "Delicias Gales SAS",
+        description: "Desarrollo de una aplicacion para una distribuidora de diferente tipos de productos con el fin de mejorar la eficiencia del proceso de venta y optimizar el tiempo de entrega.",
+        link: "https://secureingresshome.vercel.app/",
+        github: "https://github.com/jourdanmauricio/delicias-gales-back",
+        image: "projects/enconstruccion.png",
+        tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.TYPEORM,TAGS.POSTGRES,TAGS.JWT,TAGS.CLOUDINARY,TAGS.SWAGGER
+        ],
+    },
+    {
+        title: "Coco+",
+        description: "Coco+ es una plataforma centralizada para la gestión de coworkings y empresas que implementa funcionalidades de reserva para que los usuarios puedan reservar espacios de trabajo,Integra geolocalización para facilitar la ubicación de los coworkings y empresas e incluye distintos dashboards para la configuración de empresas y de coworkings",
+        link: "https://coco-plus-front.vercel.app/",
+        github: "https://github.com/SebasPCDev/coco-plus-front",
+        image: "../../public/cocoPort.png",
+        tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.TYPEORM,TAGS.POSTGRES,TAGS.JWT,TAGS.CLOUDINARY,TAGS.SWAGGER
+        ],
+
+    },
+     {
+        title: "Ramiro Tech",
+        description: "Este trabajo fue algo muy interesante por que en el ultimo modulo academico , nos dividimos con mi compa David , el para especializacion del front y yo al back. Luego cada quien termino su especializacion en Abril y terminando Henry decidimos en Junio empalmar los trabajos, su front con mi back entonces nos tomo unos dias organizar todo para que todo cuadrara y quedara una buena pagina del ecommerce que decidimos llamarlo Ramiro Tech.",
         link: "https://papodev.vercel.app/",
-        github: "https://github.com/JPRuedaZ/papodev",
-        image: "/assets/papodev.png",
-        tags: [TAGS.REACT, TAGS.NEST, TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.POSTGRES, TAGS.MONGODB, TAGS.NODE],
-    }
+        github: "https://github.com/JPRuedaZ/Backend-Ecommerce",
+        image: "../../public/RamiroTech.jpg",
+        tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.POSTGRES,TAGS.TYPEORM,TAGS.CLOUDINARY,TAGS.JWT,TAGS.SWAGGER,TAGS.DOCKER,TAGS.VERCEL],
+    },
 ]
 ---
 

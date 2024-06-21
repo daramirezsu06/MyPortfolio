@@ -1,0 +1,33 @@
+---
+import AcademiItem from './AcademiItem.astro';
+
+const EXPERIENCE = [   
+    {
+        title: "Ingeniero Administrador , Ingenieria Administrativa",
+        description: "universidad nacional de colombia",
+        date: "2013 - 2018"
+    },
+    {
+        title: "Diplomado Big Data Analítica , Procesamiento de datos",
+        description: "cedesistema",
+        date: "2021"
+    },
+    {
+        title: "fullstack developer",
+        description: "Soy henrry",
+        date: "2024"
+    },  
+
+]
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+        {
+            EXPERIENCE.map((experience) => (
+                <li class="mb-10 ms-4">
+                <AcademiItem {...experience} />
+                </li>
+            ))
+        }
+</li>
+</ol>

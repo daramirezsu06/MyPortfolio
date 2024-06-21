@@ -12,9 +12,13 @@ import ExperienceLogo from '../components/icons/ExperienceLogo.astro';
 import ExperienceItems from '../components/ExperienceItems.astro';
 import Code from '../components/icons/Code.astro';
 import Projects from '../components/Projects.astro';
+import Pdf from '../components/icons/Pdf.astro';
+import Me from '../components/icons/Me.astro';
+import Academi from '../components/academi.astro';
+import AcademiIcon from '../components/icons/AcademiIcon.astro';
 ---
 
-<Layout title="portafolio de David - Desarrollador y Programador web" >
+<Layout title="portafolio de David - Desarrollador y Programador web" description="contacatame para crar soluciones ignobadoras por medio de aplicaciones web" >
 	<main class=" px-4 ">
 
 		<SectionComponenets>
@@ -22,7 +26,7 @@ import Projects from '../components/Projects.astro';
 				
 			<img class="rounded-full w-12 h-12" src="https://avatars.githubusercontent.com/u/98566653?v=4" alt="David R photo"/>
 			<h1 class="text-white text-5xl font-bold flex flex-row justify-center gap-x-4 pb-4">Hola, Soy David Ramirez <a href="https://www.linkedin.com/in/david-ram%C3%ADrez-su%C3%A1rez-8925b9149/" target="_blank" class="flex justify-center items-center" ><Badge>disponible para trabajar</Badge></a> </h1>
-			<h2 class=" text-xl opacity-80"> <spam>Ingeniero Administrador, fullstack developer,</spam>con una pasión por la tecnología y la programación. Me encanta crear soluciones innovadoras para personas y empresas, y estoy constantemente buscando maneras de mejorar y aprender más en este campo.
+			<h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]"> <spam class="text-yellow-200">Ingeniero Administrador, fullstack developer,</spam>con una pasión por la tecnología y la programación. Me encanta crear soluciones innovadoras para personas y empresas, y estoy constantemente buscando maneras de mejorar y aprender más en este campo.
 
 			royectos para empresas</h2>
 			
@@ -43,9 +47,14 @@ import Projects from '../components/Projects.astro';
 			</SectionComponenets>	
 
 			<SectionComponenets>
-				<h1 class="flex gap-2 pb-4"><ExperienceLogo class="size-6" /> Experiencia Laboral</h1>
+				<h1 class="flex gap-2 pb-4  mb-2 mt-6"><ExperienceLogo class="size-6" /> Experiencia Laboral</h1>
 				<Experience />
 			</SectionComponenets>
+			<SectionComponenets>
+				<h1 class="flex gap-2 pb-4 mb-2 mt-6"><AcademiIcon class="size-6" /> Formacion Academica</h1>
+				<Academi/>
+			</SectionComponenets>
+			
 			<SectionComponenets>
 				<h1 class="flex gap-2 pb-4"><Code class="size-6" /> Proyectos</h1>
 				<Projects />
