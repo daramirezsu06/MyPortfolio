@@ -120,16 +120,16 @@ const TAGS = {
 const PROJECTS = [
     {
         title: "Delicias Gales SAS",
-        description: "Desarrollo de una aplicacion para una distribuidora de diferente tipos de productos con el fin de mejorar la eficiencia del proceso de venta y optimizar el tiempo de entrega.",
+        description: "Esta aplicación, actualmente en desarrollo, está diseñada para una empresa productora y comercializadora de alimentos y otros productos. La plataforma ofrece una solución integral para la gestión de diversas áreas del negocio, con funcionalidades específicas y dashboards personalizados según el rol del usuario (cliente, vendedor, administrador,delivery), y cuenta con funcionalidadesde ventas, inventarios, produccion, entregas, manejo de cartera etc",
         link: "https://secureingresshome.vercel.app/",
         github: "https://github.com/jourdanmauricio/delicias-gales-back",
-        image: "projects/enconstruccion.png",
+        image: "../../public/deliciasGales.png",
         tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.TYPEORM,TAGS.POSTGRES,TAGS.JWT,TAGS.CLOUDINARY,TAGS.SWAGGER
         ],
     },
     {
         title: "Coco+",
-        description: "Coco+ es una plataforma centralizada para la gestión de coworkings y empresas que implementa funcionalidades de reserva para que los usuarios puedan reservar espacios de trabajo,Integra geolocalización para facilitar la ubicación de los coworkings y empresas e incluye distintos dashboards para la configuración de empresas y de coworkings",
+        description: "Coco+ es una plataforma centralizada diseñada para la gestión de coworkings y empresas, implementando funcionalidades avanzadas para facilitar la reserva de espacios de trabajo. Este proyecto fue desarrollado para una startup argentina que actualmente se encuentra en fase de incubación y a la espera de una ronda de inversión para comenzar a operar en Argentina.",
         link: "https://coco-plus-front.vercel.app/",
         github: "https://github.com/SebasPCDev/coco-plus-front",
         image: "../../public/cocoPort.png",
@@ -139,7 +139,7 @@ const PROJECTS = [
     },
      {
         title: "Ramiro Tech",
-        description: "Este trabajo fue algo muy interesante por que en el ultimo modulo academico , nos dividimos con mi compa David , el para especializacion del front y yo al back. Luego cada quien termino su especializacion en Abril y terminando Henry decidimos en Junio empalmar los trabajos, su front con mi back entonces nos tomo unos dias organizar todo para que todo cuadrara y quedara una buena pagina del ecommerce que decidimos llamarlo Ramiro Tech.",
+        description: "Desarrollé este proyecto de eCommerce para aplicar y consolidar mis conocimientos en tecnologías de frontend y backend. Inicialmente, construí la aplicación con React y Next.js para el frontend, y para el back Express. Posteriormente, migré al el back de un compañero en  NestJS para adaptarme a un nuevo stack tecnológico y comenzar a entender y aprovechar las ventajas que ofrece esta plataforma.",
         link: "https://papodev.vercel.app/",
         github: "https://github.com/JPRuedaZ/Backend-Ecommerce",
         image: "../../public/RamiroTech.jpg",
@@ -150,15 +150,15 @@ const PROJECTS = [
 
 {
     PROJECTS.map(({title, description, link, github, image, tags}) => (
-        <article>
+        <article class="max-w-[700px] mb-10">
             <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
             <p class="text-lg mb-4 text-pretty">{description}</p>
-            <ul class="flex gap-x-2 flex-row">
+            <ul class="flex gap-2 gap-x-2 flex-wrap max-w-[700px] my-4">
                 {
                     tags.map((tag) => (
-                        <li>
+                        <li class="break-words">
                             <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`} >
-                            <tag.icon class="size-4" />{tag.name}
+                                <tag.icon class="size-4" />{tag.name}
                             </span>
                         </li>
                     ))
@@ -166,5 +166,5 @@ const PROJECTS = [
             </ul>
             <img class="rounded shadow-2xl shadow-white/10" src={image} alt={`Captura de pantalla del proyecto ${image}`} />
         </article>
-))
+    ))
 }
