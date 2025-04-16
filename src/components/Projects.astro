@@ -17,6 +17,9 @@ import Redux from "./icons/Redux.astro"
 import Swagger from "./icons/Swagger.astro"
 import TypeOrm from "./icons/TypeOrm.astro"
 import Vercel from "./icons/Vercel.astro"
+import MUI from "./icons/MUI.astro"
+import GitHubActions from "./icons/GitHubActions.astro"
+import GitHub from "./icons/GitHub.astro"
 
 
 
@@ -114,14 +117,63 @@ const TAGS = {
         class: "bg-yellow-500",
         icon: JavaScript,
     },
+    MUI: {
+        name: "MUI",
+        class: "bg-orange-500",
+        icon: MUI,
+    },
+    GITHUBACTIONS: {
+        name: "GitHubActions",
+        class: "bg-red-500",
+        icon: GitHubActions,
+    },
    
 
 }
 const PROJECTS = [
+    
+    {
+        title: "Nvoye – Plataforma para Embajadores y Diplomáticos",
+        description:
+        "Actualmente formo parte del equipo de desarrollo front-end en Nvoye, una startup enfocada en brindar atención integral a embajadores y diplomáticos alrededor del mundo. Estamos construyendo una plataforma para brindar un soporte integral y una red social privada para mejorar el networking y la comunicación entre diplomaticos. he desarrollado el front-end junto a otro desarrollador utilizando . También me encargo del despliegue en un entorno dockerizado en VPS para testeos internos, con integración continua mediante GitHub Actions. La app requiere autenticación para ingresar. Si deseas probarla, puedes usar la siguiente credeciales: email:daramirezsu@gmail.com y password:123456Nvoye#",
+        link: "https://nvoye.admingales.online/login",
+        github: "https://nvoye.admingales.online/login", 
+        image: "nvoye.jpg",
+        tags: [
+            TAGS.TYPESCRIPT,
+            TAGS.NEXT,
+            TAGS.REACT,
+            TAGS.DOCKER,
+            TAGS.MUI,
+            TAGS.GITHUBACTIONS,
+            
+        ],
+    },
+    {
+        title: "E-commerce Hierro Express",
+        description:
+        "Desarrollé una solución web personalizada para una ferretería de Montevideo, Uruguay, cuyo objetivo principal era replicar digitalmente la experiencia de compra presencial. La aplicación permite a los clientes realizar pedidos filtrando productos según categorías y atributos específicos como largo, ancho, grosor, tipo de perforación, entre otros, según la categoría del producto. El sistema incluye un panel administrativo completo para gestionar productos, pedidos, entregas y pagos.  La app fue dockerizada y desplegada en un VPS .",
+        link: "https://hierroexpress.com.uy",
+        github: "https://github.com/HierroExpress",
+        image: "hierroExpress.jpg",
+        tags: [
+            TAGS.TYPESCRIPT,
+            TAGS.NEXT,
+            TAGS.REACT,
+            TAGS.NEST,
+            TAGS.TAILWIND,
+            TAGS.TYPEORM,
+            TAGS.POSTGRES,
+            TAGS.JWT,
+            TAGS.CLOUDINARY,
+            TAGS.SWAGGER,
+            TAGS.DOCKER,
+            ],
+    },
     {
         title: "Delicias Gales SAS",
         description: "Esta aplicación, actualmente en desarrollo, está diseñada para una empresa productora y comercializadora de alimentos y otros productos. La plataforma ofrece una solución integral para la gestión de diversas áreas del negocio, con funcionalidades específicas y dashboards personalizados según el rol del usuario (cliente, vendedor, administrador,delivery), y cuenta con funcionalidadesde ventas, inventarios, produccion, entregas, manejo de cartera etc",
-        link: "https://secureingresshome.vercel.app/",
+        link: "https://admingales.online/",
         github: "https://github.com/jourdanmauricio/delicias-gales-back",
         image: "deliciasGales.png",
         tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.TYPEORM,TAGS.POSTGRES,TAGS.JWT,TAGS.CLOUDINARY,TAGS.SWAGGER
@@ -130,21 +182,26 @@ const PROJECTS = [
     {
         title: "Coco+",
         description: "Coco+ es una plataforma centralizada diseñada para la gestión de coworkings y empresas, implementando funcionalidades avanzadas para facilitar la reserva de espacios de trabajo. Este proyecto fue desarrollado para una startup argentina que actualmente se encuentra en fase de incubación y a la espera de una ronda de inversión para comenzar a operar en Argentina.",
-        link: "https://coco-plus-front.vercel.app/",
+        link: "https://coco-plus-front.vercel.app",
         github: "https://github.com/SebasPCDev/coco-plus-front",
         image: "cocoPort.png",
         tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.TYPEORM,TAGS.POSTGRES,TAGS.JWT,TAGS.CLOUDINARY,TAGS.SWAGGER
-        ],
+    ],
 
     },
-     {
+    {
         title: "Ramiro Tech",
         description: "Desarrollé este proyecto de eCommerce para aplicar y consolidar mis conocimientos en tecnologías de frontend y backend. Inicialmente, construí la aplicación con React y Next.js para el frontend, y para el back Express. Posteriormente, migré al el back de un compañero en  NestJS para adaptarme a un nuevo stack tecnológico y comenzar a entender y aprovechar las ventajas que ofrece esta plataforma.",
-        link: "https://papodev.vercel.app/",
+        link: "https://ecomerce-ramiro-tech.vercel.app/",
         github: "https://github.com/JPRuedaZ/Backend-Ecommerce",
         image: "RamiroTech.jpg",
         tags: [TAGS.TYPESCRIPT,TAGS.NEXT, TAGS.NEST,TAGS.TAILWIND,TAGS.POSTGRES,TAGS.TYPEORM,TAGS.CLOUDINARY,TAGS.JWT,TAGS.SWAGGER,TAGS.DOCKER,TAGS.VERCEL],
     },
+
+
+
+
+
 ]
 ---
 
@@ -164,7 +221,9 @@ const PROJECTS = [
                     ))
                 }
             </ul>
+            <a href={link}>
             <img class="rounded shadow-2xl shadow-white/10" src={image} alt={`Captura de pantalla del proyecto ${image}`} />
+            </a>
         </article>
     ))
 }
